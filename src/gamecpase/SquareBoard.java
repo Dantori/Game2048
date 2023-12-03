@@ -96,4 +96,17 @@ public class SquareBoard extends Board {
         }
         return values;
     }
+
+    public List<Integer> getValueRow(int i){
+        return getValues(getRow(i));
+    }
+
+    public List<Integer> getValueColumn(int j){
+        return getValues(getColumn(j));
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

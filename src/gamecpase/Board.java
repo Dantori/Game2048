@@ -24,4 +24,6 @@ public abstract class Board {
     public abstract List<Key> getRow(int i);
     public abstract boolean hasValue(Integer value);
     public abstract List<Integer> getValues(List<Key> keys);
+    public abstract List<Integer> getValueRow(int i);
+    public abstract List<Integer> getValueColumn(int j);
 }
