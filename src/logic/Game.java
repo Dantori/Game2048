@@ -1,3 +1,7 @@
+package logic;
+
+import gamecpase.Board;
+
 public interface Game {
 
     void init();

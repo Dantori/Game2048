@@ -1,3 +1,7 @@
+package logic;
+
+import gamecpase.Board;
+
 import java.util.Random;
 
 public class Game2048 implements Game {
@@ -12,7 +16,6 @@ public class Game2048 implements Game {
 
     @Override
     public void init() {
-
     }
 
     @Override
