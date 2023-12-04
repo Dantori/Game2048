@@ -27,7 +27,7 @@ public class SquareBoard extends Board {
 
     @Override
     public List<Key> availableSpace() {
-        List<Key> availableKeys = new ArrayList<>();
+        var availableKeys = new ArrayList<Key>();
         for (Map.Entry<Key, Integer> entry : board.entrySet()) {
             if (entry.getValue() == null) {
                 availableKeys.add(entry.getKey());
@@ -58,7 +58,7 @@ public class SquareBoard extends Board {
 
     @Override
     public List<Key> getColumn(int j) {
-        List<Key> keyColumn = new ArrayList<>();
+        var keyColumn = new ArrayList<Key>();
         for (Map.Entry<Key,Integer> entry : board.entrySet()) {
             if (entry.getKey().getJ() == j) {
                 keyColumn.add(entry.getKey());
@@ -69,7 +69,7 @@ public class SquareBoard extends Board {
 
     @Override
     public List<Key> getRow(int i) {
-        List<Key> keyRow = new LinkedList<>();
+        var keyRow = new LinkedList<Key>();
         for (Map.Entry<Key, Integer> entry : board.entrySet()) {
             if (entry.getKey().getI() == i) {
                 keyRow.add(entry.getKey());
