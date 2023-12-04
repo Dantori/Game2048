@@ -59,9 +59,7 @@ public class Game2048 implements Game {
     public void addItem() {
         List<Key> spaces = board.availableSpace();
         for (Key currentKey : spaces) {
-            if (random.nextFloat() > 0.7f) {
-                board.addItem(currentKey, random.nextInt(16));
-            }
+            board.addItem(currentKey, random.nextInt(16));
         }
     }
 

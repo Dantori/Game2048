@@ -80,12 +80,7 @@ public class SquareBoard extends Board {
 
     @Override
     public boolean hasValue(Integer value) {
-        for (Map.Entry<Key, Integer> entry : board.entrySet()) {
-            if (Objects.equals(entry.getValue(), value)) {
-                return true;
-            }
-        }
-        return false;
+        return board.containsValue(value);
     }
 
     @Override
