@@ -85,7 +85,7 @@ public class SquareBoard extends Board {
 
     @Override
     public List<Integer> getValues(List<Key> keys) {
-        List<Integer> values = new ArrayList<>();
+        var values = new ArrayList<Integer>();
         for (Key key : keys) {
             values.add(board.get(key));
         }

@@ -1,10 +1,8 @@
 package logic;
 
 import gamecpase.Board;
-import gamecpase.Key;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 import static java.util.Arrays.asList;
@@ -57,8 +55,8 @@ public class Game2048 implements Game {
 
     @Override
     public void addItem() {
-        List<Key> spaces = board.availableSpace();
-        for (Key currentKey : spaces) {
+        var spaces = board.availableSpace();
+        for (var currentKey : spaces) {
             board.addItem(currentKey, random.nextInt(16));
         }
     }

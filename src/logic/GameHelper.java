@@ -6,13 +6,13 @@ import java.util.List;
 public class GameHelper {
 
     public List<Integer> moveAndMergeEqual(List<Integer> list) {
-        List<Integer> result = new ArrayList<>();
+        var result = new ArrayList<Integer>();
 
         if (list.isEmpty()) {
             return result;
         }
 
-        List<Integer> tempList = new ArrayList<>();
+        var tempList = new ArrayList<Integer>();
         for (Integer num : list) {
             if (num != null && num != 0) {
                 tempList.add(num);
